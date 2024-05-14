@@ -22,7 +22,24 @@
 
             Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
 
-           
+            Console.WriteLine("What is the radius of your circle?");
+
+            var userInput = Console.ReadLine();
+
+            double radius = double.Parse(userInput);
+
         }
+
+        //Exercise 2
+
+
+        public static double AreaOfCircle(double radius)
+        {
+
+        var area = Math.PI * Math.Pow(radius, 2);
+        return area;
+
+        }
+
     }
 }
